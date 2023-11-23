@@ -1,0 +1,17 @@
+
+--------------------------------------------------------------
+	FACTURA(ID Factura: 13)
+
+Cliente: Nombre Ejemplo
+Dirección cliente:Direccion Ejemplo
+
+
+corral ->14000.0 ->800 cal
+corral queso ->16000.0 ->950 cal
+
+	Calorías totales: 1750
+	Precio neto: 30000.0
+	Precio tras descuento (0.0%) :30000.0
+	IVA(19%): 5700.0
+	Precio total: 35700.0
+--------------------------------------------------------------
