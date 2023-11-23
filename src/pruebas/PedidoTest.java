@@ -30,7 +30,6 @@ class PedidoTest {
     	for (int i=0; i<=20;i++) {
     	try {
     	pedido.agregarProducto(restaurante.getMenuBase().get(0));
-    	System.out.println("->"+i);
     	assertTrue(pedido.getPrecioNetoPedido()<=150000,"Precio dentro de rango");
     	}
     	catch (PedidoExcedeValorException ex){
@@ -45,7 +44,6 @@ class PedidoTest {
     	pedido.agregarProducto(restaurante.getMenuBase().get(0));
     	pedido.agregarProducto(restaurante.getMenuBase().get(1));
         String textoFactura = pedido.generarTextoFactura();
-        System.out.println(textoFactura);
         assertNotNull(textoFactura);
     }
     @Test
@@ -54,7 +52,6 @@ class PedidoTest {
     	pedido.agregarProducto(restaurante.getMenuBase().get(0));
     	pedido.agregarProducto(restaurante.getMenuBase().get(1));
         pedido.guardarFactura();
-        System.out.println(pedido.getIdPedido());
         //Se guarda archivo
         try {
         File file = new File("Facturas/" + pedido.getIdPedido() + ".txt");
